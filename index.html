@@ -1,0 +1,610 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>在线考试</title>
+    <link href="main.css" rel="stylesheet" type="text/css"/>
+    <link href="iconfont.css" rel="stylesheet" type="text/css"/>
+    <link href="test.css" rel="stylesheet" type="text/css"/>
+
+    <style>
+        .hasBeenAnswer {
+            background: #5d9cec;
+            color: #fff;
+        }
+
+    </style>
+</head>
+
+<body>
+<div class="main">
+    <!--nr start-->
+    <div class="test_main">
+        <div class="nr_left">
+            <div class="test">
+                <form action="" method="post">
+                    <div class="test_title">
+                        <font><input type="button" name="test_jiaojuan" value="交卷"></font>
+                    </div>
+                    <div class="test_content">
+                        <div class="test_content_title">
+                            <h1>改良kupperman评分量表</h1>
+                        </div>
+                        <div class="">
+                            <h2>注：</h2>
+                            <p>
+                                <strong>基本分</strong>：第1题为4，第2、3、4、11、12题为2，第5、6、7、8、9、10题为1。
+                            </p>
+                            <p><strong>症状指数</strong>：①为0分，②为1分，③为2分，④为3分。</p>
+                            <p><strong>症状评分</strong>:基本分×症状指数</p>
+                            <p><strong>总分</strong>：各症状指数之和</p>
+                        </div>
+                    </div>
+                    <div class="test_content_nr">
+                        <h3 style="color: red;">指导语：下面一些问题是关于您最近2周身体情况，请选择或填写最符合您近2周实际情况的答案画勾（√）。
+                        </h3>
+                        <ul>
+                            <li id="qu_0_0">
+                                <div class="test_content_nr_tt">
+                                    <i>1</i><span>(4分)</span><font>潮热出汗 （ ）</font><b class="icon iconfont">&#xe881;</b>
+                                </div>
+
+                                <div class="test_content_nr_main">
+                                    <ul>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer1"
+                                                   id="0_answer_1_option_1"/>
+                                            <label for="0_answer_1_option_1">
+                                                <p class="ue" style="display: inline;">① 无</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer1"
+                                                   id="0_answer_1_option_2"/>
+                                            <label for="0_answer_1_option_2">
+                                                <p class="ue" style="display: inline;">② ＜ 3次/d</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer1"
+                                                   id="0_answer_1_option_3"/>
+                                            <label for="0_answer_1_option_3">
+                                                <p class="ue" style="display: inline;">③ 3 ～ 9次/d</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer1"
+                                                   id="0_answer_1_option_4"/>
+                                            <label for="0_answer_1_option_4">
+                                                <p class="ue" style="display: inline;">④ ≥10次/d</p>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li id="qu_0_1">
+                                <div class="test_content_nr_tt">
+                                    <i>2</i><span>(2分)</span><font>感觉异常</font><b
+                                        class="icon iconfont">&#xe881;</b>
+                                </div>
+
+                                <div class="test_content_nr_main">
+                                    <ul>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer1"
+                                                   id="0_answer_2_option_1"/>
+                                            <label for="0_answer_2_option_1">
+                                                <p class="ue" style="display: inline;">① 无</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer1"
+                                                   id="0_answer_2_option_2"/>
+                                            <label for="0_answer_2_option_2">
+                                                <p class="ue" style="display: inline;">② 与天气有关</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer1"
+                                                   id="0_answer_2_option_3"/>
+                                            <label for="0_answer_2_option_3">
+                                                <p class="ue" style="display: inline;">③ 平常有冷热痛麻木感</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer1"
+                                                   id="0_answer_2_option_4"/>
+                                            <label for="0_answer_2_option_4">
+                                                <p class="ue" style="display: inline;">④ 冷热痛感丧失</p>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li id="qu_0_2">
+                                <div class="test_content_nr_tt">
+                                    <i>3</i><span>(2分)</span><font>失眠</font><b
+                                        class="icon iconfont">&#xe881;</b>
+                                </div>
+
+                                <div class="test_content_nr_main">
+                                    <ul>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer1"
+                                                   id="0_answer_3_option_1"/>
+                                            <label for="0_answer_2_option_1">
+                                                <p class="ue" style="display: inline;">① 无</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer1"
+                                                   id="0_answer_3_option_2"/>
+                                            <label for="0_answer_2_option_2">
+                                                <p class="ue" style="display: inline;">② 偶尔</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer1"
+                                                   id="0_answer_3_option_3"/>
+                                            <label for="0_answer_2_option_3">
+                                                <p class="ue" style="display: inline;">③ 经常，安眠药有效</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer1"
+                                                   id="0_answer_3_option_4"/>
+                                            <label for="0_answer_2_option_4">
+                                                <p class="ue" style="display: inline;">④ 影响工作生活</p>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li id="qu_0_3">
+                                <div class="test_content_nr_tt">
+                                    <i>4</i><span>(2分)</span><font>情绪波动</font><b
+                                        class="icon iconfont">&#xe881;</b>
+                                </div>
+
+                                <div class="test_content_nr_main">
+                                    <ul>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer1"
+                                                   id="0_answer_4_option_1"/>
+                                            <label for="0_answer_2_option_1">
+                                                <p class="ue" style="display: inline;">① 无</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer1"
+                                                   id="0_answer_4_option_2"/>
+                                            <label for="0_answer_4_option_2">
+                                                <p class="ue" style="display: inline;">② 偶尔</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer1"
+                                                   id="0_answer_4_option_3"/>
+                                            <label for="0_answer_2_option_3">
+                                                <p class="ue" style="display: inline;">③ 经常，无自知觉</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer1"
+                                                   id="0_answer_4_option_4"/>
+                                            <label for="0_answer_2_option_4">
+                                                <p class="ue" style="display: inline;">④ 自知、不能自控</p>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li id="qu_0_4">
+                                <div class="test_content_nr_tt">
+                                    <i>5</i><span>(1分)</span><font>抑郁、疑心</font><b class="icon iconfont">&#xe881;</b>
+                                </div>
+
+                                <div class="test_content_nr_main">
+                                    <ul>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer1"
+                                                   id="0_answer_5_option_1"/>
+                                            <label for="0_answer_1_option_1">
+                                                <p class="ue" style="display: inline;">① 无</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer1"
+                                                   id="0_answer_5_option_2"/>
+                                            <label for="0_answer_1_option_2">
+                                                <p class="ue" style="display: inline;">② 偶尔</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer1"
+                                                   id="0_answer_5_option_3"/>
+                                            <label for="0_answer_1_option_3">
+                                                <p class="ue" style="display: inline;">③ 经常，能自控</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer1"
+                                                   id="0_answer_5_option_4"/>
+                                            <label for="0_answer_1_option_4">
+                                                <p class="ue" style="display: inline;">④ 失去生活信心</p>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li id="qu_0_5">
+                                <div class="test_content_nr_tt">
+                                    <i>6</i><span>(1分)</span><font>眩晕</font><b
+                                        class="icon iconfont">&#xe881;</b>
+                                </div>
+
+                                <div class="test_content_nr_main">
+                                    <ul>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer1"
+                                                   id="0_answer_6_option_1"/>
+                                            <label for="0_answer_2_option_1">
+                                                <p class="ue" style="display: inline;">① 无</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer1"
+                                                   id="0_answer_6_option_2"/>
+                                            <label for="0_answer_2_option_2">
+                                                <p class="ue" style="display: inline;">② 偶尔</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer1"
+                                                   id="0_answer_6_option_3"/>
+                                            <label for="0_answer_2_option_3">
+                                                <p class="ue" style="display: inline;">③ 经藏，不影响生活</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer1"
+                                                   id="0_answer_6_option_4"/>
+                                            <label for="0_answer_2_option_4">
+                                                <p class="ue" style="display: inline;">④ 影响生活</p>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li id="qu_0_6">
+                                <div class="test_content_nr_tt">
+                                    <i>7</i><span>(1分)</span><font>疲乏</font><b
+                                        class="icon iconfont">&#xe881;</b>
+                                </div>
+
+                                <div class="test_content_nr_main">
+                                    <ul>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer1"
+                                                   id="0_answer_7_option_1"/>
+                                            <label for="0_answer_2_option_1">
+                                                <p class="ue" style="display: inline;">① 无</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer1"
+                                                   id="0_answer_7_option_2"/>
+                                            <label for="0_answer_2_option_2">
+                                                <p class="ue" style="display: inline;">② 偶尔</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer1"
+                                                   id="0_answer_7_option_3"/>
+                                            <label for="0_answer_2_option_3">
+                                                <p class="ue" style="display: inline;">③ 上四楼困难</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer1"
+                                                   id="0_answer_7_option_4"/>
+                                            <label for="0_answer_2_option_4">
+                                                <p class="ue" style="display: inline;">④ 日常生活受限</p>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li id="qu_0_7">
+                                <div class="test_content_nr_tt">
+                                    <i>8</i><span>(1分)</span><font>骨关节痛</font><b
+                                        class="icon iconfont">&#xe881;</b>
+                                </div>
+
+                                <div class="test_content_nr_main">
+                                    <ul>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer1"
+                                                   id="0_answer_8_option_1"/>
+                                            <label for="0_answer_2_option_1">
+                                                <p class="ue" style="display: inline;">① 无</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer1"
+                                                   id="0_answer_8_option_2"/>
+                                            <label for="0_answer_2_option_2">
+                                                <p class="ue" style="display: inline;">② 偶尔</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer1"
+                                                   id="0_answer_8_option_3"/>
+                                            <label for="0_answer_2_option_3">
+                                                <p class="ue" style="display: inline;">③ 经常，不影响功能</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer1"
+                                                   id="0_answer_8_option_4"/>
+                                            <label for="0_answer_2_option_4">
+                                                <p class="ue" style="display: inline;">④ 功能障碍</p>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li id="qu_0_8">
+                                <div class="test_content_nr_tt">
+                                    <i>9</i><span>(1分)</span><font>头痛</font><b class="icon iconfont">&#xe881;</b>
+                                </div>
+
+                                <div class="test_content_nr_main">
+                                    <ul>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer1"
+                                                   id="0_answer_9_option_1"/>
+                                            <label for="0_answer_1_option_1">
+                                                <p class="ue" style="display: inline;">① 无</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer1"
+                                                   id="0_answer_9_option_2"/>
+                                            <label for="0_answer_1_option_2">
+                                                <p class="ue" style="display: inline;">② 偶尔</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer1"
+                                                   id="0_answer_9_option_3"/>
+                                            <label for="0_answer_1_option_3">
+                                                <p class="ue" style="display: inline;">③ 经常、能忍受</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer1"
+                                                   id="0_answer_9_option_4"/>
+                                            <label for="0_answer_1_option_4">
+                                                <p class="ue" style="display: inline;">④ 需服药</p>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li id="qu_0_9">
+                                <div class="test_content_nr_tt">
+                                    <i>10</i><span>(1分)</span><font>心悸</font><b
+                                        class="icon iconfont">&#xe881;</b>
+                                </div>
+
+                                <div class="test_content_nr_main">
+                                    <ul>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer1"
+                                                   id="0_answer_10_option_1"/>
+                                            <label for="0_answer_2_option_1">
+                                                <p class="ue" style="display: inline;">① 无</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer1"
+                                                   id="0_answer_10_option_2"/>
+                                            <label for="0_answer_2_option_2">
+                                                <p class="ue" style="display: inline;">② 偶尔</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer1"
+                                                   id="0_answer_10_option_3"/>
+                                            <label for="0_answer_2_option_3">
+                                                <p class="ue" style="display: inline;">③ 经常，不影响</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer1"
+                                                   id="0_answer_10_option_4"/>
+                                            <label for="0_answer_2_option_4">
+                                                <p class="ue" style="display: inline;">④ 需治疗</p>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li id="qu_0_10">
+                                <div class="test_content_nr_tt">
+                                    <i>11</i><span>(2分)</span><font>皮肤蚁走感</font><b
+                                        class="icon iconfont">&#xe881;</b>
+                                </div>
+
+                                <div class="test_content_nr_main">
+                                    <ul>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer1"
+                                                   id="0_answer_11_option_1"/>
+                                            <label for="0_answer_2_option_1">
+                                                <p class="ue" style="display: inline;">① 无</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer1"
+                                                   id="0_answer_11_option_2"/>
+                                            <label for="0_answer_2_option_2">
+                                                <p class="ue" style="display: inline;">② 偶尔</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer1"
+                                                   id="0_answer_11_option_3"/>
+                                            <label for="0_answer_2_option_3">
+                                                <p class="ue" style="display: inline;">③ 经常，能忍受</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer1"
+                                                   id="0_answer_11_option_4"/>
+                                            <label for="0_answer_2_option_4">
+                                                <p class="ue" style="display: inline;">④ 需治疗</p>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li id="qu_0_11">
+                                <div class="test_content_nr_tt">
+                                    <i>12</i><span>(2分)</span><font>性生活</font><b
+                                        class="icon iconfont">&#xe881;</b>
+                                </div>
+                                <div class="test_content_nr_main">
+                                    <ul>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer1"
+                                                   id="0_answer_12_option_1"/>
+                                            <label for="0_answer_2_option_1">
+                                                <p class="ue" style="display: inline;">① 无</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer1"
+                                                   id="0_answer_12_option_2"/>
+                                            <label for="0_answer_2_option_2">
+                                                <p class="ue" style="display: inline;">② 性欲下降</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer1"
+                                                   id="0_answer_12_option_3"/>
+                                            <label for="0_answer_2_option_3">
+                                                <p class="ue" style="display: inline;">③ 性生活困难</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer1"
+                                                   id="0_answer_12_option_4"/>
+                                            <label for="0_answer_2_option_4">
+                                                <p class="ue" style="display: inline;">④ 性欲丧失</p>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li id="qu_0_12">
+                                <div class="test_content_nr_tt">
+                                    <i>13</i><span>(2分)</span><font>泌尿感染</font><b
+                                        class="icon iconfont">&#xe881;</b>
+                                </div>
+                                <div class="test_content_nr_main">
+                                    <ul>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer1"
+                                                   id="0_answer_13_option_1"/>
+                                            <label for="0_answer_2_option_1">
+                                                <p class="ue" style="display: inline;">① 无</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer1"
+                                                   id="0_answer_13_option_2"/>
+                                            <label for="0_answer_2_option_2">
+                                                <p class="ue" style="display: inline;">② 偶尔</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer1"
+                                                   id="0_answer_13_option_3"/>
+                                            <label for="0_answer_2_option_3">
+                                                <p class="ue" style="display: inline;">③ ＞ 3次/年，能自愈</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer1"
+                                                   id="0_answer_13_option_4"/>
+                                            <label for="0_answer_2_option_4">
+                                                <p class="ue" style="display: inline;">④ ＞ 3次/年，需服药</p>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--nr end-->
+    <div class="foot"></div>
+</div>
+
+<script src="jquery-1.11.3.min.js"></script>
+<script src="jquery.easy-pie-chart.js"></script>
+<!--时间js-->
+<script src="time/jquery.countdown.js"></script>
+<script>
+    window.jQuery(function ($) {
+        "use strict";
+
+        $('time').countDown({
+            with_separators: false
+        });
+        $('.alt-1').countDown({
+            css_class: 'countdown-alt-1'
+        });
+        $('.alt-2').countDown({
+            css_class: 'countdown-alt-2'
+        });
+
+    });
+
+
+    $(function () {
+        $('li.option label').click(function () {
+            debugger;
+            var examId = $(this).closest('.test_content_nr_main').closest('li').attr('id'); // 得到题目ID
+            var cardLi = $('a[href=#' + examId + ']'); // 根据题目ID找到对应答题卡
+            // 设置已答题
+            if (!cardLi.hasClass('hasBeenAnswer')) {
+                cardLi.addClass('hasBeenAnswer');
+            }
+
+        });
+    });
+</script>
+
+</body>
+
+</html>
