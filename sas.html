@@ -857,7 +857,18 @@
             for (let option of options) {
                 sum += option;
             }
-            alert(name + "(" + sex + ")，" + "最后得分：" + sum * 1.25 + "分");
+            sum *= 1.25;
+            var s = "正常";
+            if (sum >= 50 && sum <= 60) {
+                s = "轻度焦虑";
+            }
+            if (sum >= 61 && sum <= 70) {
+                s = "中度焦虑";
+            }
+            if (sum >= 70) {
+                s = "重度焦虑";
+            }
+            alert(name + "(" + sex + ")，" + "最后得分：" + sum + "分(" + s + ")");
         });
 
         $('li.option label').click(function () {
