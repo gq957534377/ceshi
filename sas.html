@@ -1,0 +1,879 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>焦虑自评量表(SAS)</title>
+    <link href="main.css" rel="stylesheet" type="text/css"/>
+    <link href="iconfont.css" rel="stylesheet" type="text/css"/>
+    <link href="test.css" rel="stylesheet" type="text/css"/>
+
+    <style>
+        .hasBeenAnswer {
+            background: #5d9cec;
+            color: #fff;
+        }
+
+    </style>
+</head>
+
+<body>
+<div class="main">
+    <!--nr start-->
+    <div class="test_main">
+        <div class="nr_left">
+            <div class="test">
+                <form action="" method="post">
+                    <div class="test_title">
+                        <font><input id="sub" type="button" name="test_jiaojuan" value="交卷"></font>
+                    </div>
+                    <div class="test_content">
+                        <div class="test_content_title">
+                            <h1>焦虑自评量表(SAS)</h1>
+                        </div>
+                        <div class="">
+                            <p style="font-size: 16px">
+                                &nbsp&nbsp&nbsp&nbsp焦虑是一种比较普遍的精神体验，长期存在焦虑反应的人易发展为焦虑症。本量表包含20个项目，分为4级评分，请您仔细阅读以下内容，根据最近一星期的情况如实回答。</p>
+                            <h2>评分标准：</h2>
+                            <p>
+                                正向计分题A、B、C、D按1、2、3、4分计；反向计分题（标注*的题目题号：5、9、13、17、19）按4、3、2、1计分。总分乘以1.25取整数，即得标准分。低于50分者为正常；50-60分者为轻度焦虑；61-70分者为中度焦虑，70分以上者为重度焦虑。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="test_content_nr">
+                        <h3 style="color: red;">填表说明：所有题目均共用答案，请在A、B、C 、D下划“√”，每题限选一个答案。
+                        </h3>
+                        <p><strong>姓名:</strong><input id="n-name" type="text" placeholder="张三"> &nbsp&nbsp&nbsp&nbsp
+                            <strong>性别</strong>：<input
+                                    id="n-sex" type="text" placeholder="男/女">
+                        </p>
+                        <p style="font-size: 14px;color: green">答案：A没有或很少时间；B小部分时间；C相当多时间；D绝大部分或全部时间。</p>
+                        <ul>
+                            <li data-num="0" id="qu_0_0">
+                                <div class="test_content_nr_tt">
+                                    <i>1</i><font>我觉得比平时容易紧张或着急 （ ）</font><b class="icon iconfont">&#xe881;</b>
+                                </div>
+                                <div class="test_content_nr_main">
+                                    <ul>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer1"
+                                                   id="0_answer_1_option_1"/>
+                                            <label data-v="1" for="0_answer_1_option_1">
+                                                <p class="ue" style="display: inline;">A</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer1"
+                                                   id="0_answer_1_option_2"/>
+                                            <label data-v="2" for="0_answer_1_option_2">
+                                                <p class="ue" style="display: inline;">B</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer1"
+                                                   id="0_answer_1_option_3"/>
+                                            <label data-v="3" for="0_answer_1_option_3">
+                                                <p class="ue" style="display: inline;">C</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer1"
+                                                   id="0_answer_1_option_4"/>
+                                            <label data-v="4" for="0_answer_1_option_4">
+                                                <p class="ue" style="display: inline;">D</p>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li data-num="1" id="qu_0_1">
+                                <div class="test_content_nr_tt">
+                                    <i>2</i><font>我无缘无故在感到害怕 （ ）</font><b class="icon iconfont">&#xe881;</b>
+                                </div>
+                                <div class="test_content_nr_main">
+                                    <ul>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer2"
+                                                   id="0_answer_2_option_1"/>
+                                            <label data-v="1" for="0_answer_2_option_1">
+                                                <p class="ue" style="display: inline;">A</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer2"
+                                                   id="0_answer_2_option_2"/>
+                                            <label data-v="2" for="0_answer_2_option_2">
+                                                <p class="ue" style="display: inline;">B</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer2"
+                                                   id="0_answer_2_option_3"/>
+                                            <label data-v="3" for="0_answer_2_option_3">
+                                                <p class="ue" style="display: inline;">C</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer2"
+                                                   id="0_answer_2_option_4"/>
+                                            <label data-v="4" for="0_answer_2_option_4">
+                                                <p class="ue" style="display: inline;">D</p>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li data-num="2" id="qu_0_2">
+                                <div class="test_content_nr_tt">
+                                    <i>3</i><font>我容易心里烦乱或感到惊恐 （ ）</font><b class="icon iconfont">&#xe881;</b>
+                                </div>
+                                <div class="test_content_nr_main">
+                                    <ul>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer3"
+                                                   id="0_answer_3_option_1"/>
+                                            <label data-v="1" for="0_answer_3_option_1">
+                                                <p class="ue" style="display: inline;">A</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer3"
+                                                   id="0_answer_3_option_2"/>
+                                            <label data-v="2" for="0_answer_3_option_2">
+                                                <p class="ue" style="display: inline;">B</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer3"
+                                                   id="0_answer_3_option_3"/>
+                                            <label data-v="3" for="0_answer_3_option_3">
+                                                <p class="ue" style="display: inline;">C</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer3"
+                                                   id="0_answer_3_option_4"/>
+                                            <label data-v="4" for="0_answer_3_option_4">
+                                                <p class="ue" style="display: inline;">D</p>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li data-num="3" id="qu_0_3">
+                                <div class="test_content_nr_tt">
+                                    <i>4</i><font>我觉得我可能将要发疯 （ ）</font><b class="icon iconfont">&#xe881;</b>
+                                </div>
+                                <div class="test_content_nr_main">
+                                    <ul>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer4"
+                                                   id="0_answer_4_option_1"/>
+                                            <label data-v="1" for="0_answer_4_option_1">
+                                                <p class="ue" style="display: inline;">A</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer4"
+                                                   id="0_answer_4_option_2"/>
+                                            <label data-v="2" for="0_answer_4_option_2">
+                                                <p class="ue" style="display: inline;">B</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer4"
+                                                   id="0_answer_4_option_3"/>
+                                            <label data-v="3" for="0_answer_4_option_3">
+                                                <p class="ue" style="display: inline;">C</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer4"
+                                                   id="0_answer_4_option_4"/>
+                                            <label data-v="4" for="0_answer_4_option_4">
+                                                <p class="ue" style="display: inline;">D</p>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li data-num="4" id="qu_0_4">
+                                <div class="test_content_nr_tt">
+                                    <i>*5</i><font>我觉得一切都很好（ ）</font><b class="icon iconfont">&#xe881;</b>
+                                </div>
+                                <div class="test_content_nr_main">
+                                    <ul>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer5"
+                                                   id="0_answer_5_option_1"/>
+                                            <label data-v="4" for="0_answer_5_option_1">
+                                                <p class="ue" style="display: inline;">A</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer5"
+                                                   id="0_answer_5_option_2"/>
+                                            <label data-v="3" for="0_answer_5_option_2">
+                                                <p class="ue" style="display: inline;">B</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer5"
+                                                   id="0_answer_5_option_3"/>
+                                            <label data-v="2" for="0_answer_5_option_3">
+                                                <p class="ue" style="display: inline;">C</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer5"
+                                                   id="0_answer_5_option_4"/>
+                                            <label data-v="1" for="0_answer_5_option_4">
+                                                <p class="ue" style="display: inline;">D</p>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li data-num="5" id="qu_0_5">
+                                <div class="test_content_nr_tt">
+                                    <i>6</i><font>我手脚发抖打颤 （ ）</font><b class="icon iconfont">&#xe881;</b>
+                                </div>
+                                <div class="test_content_nr_main">
+                                    <ul>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer6"
+                                                   id="0_answer_6_option_1"/>
+                                            <label data-v="1" for="0_answer_6_option_1">
+                                                <p class="ue" style="display: inline;">A</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer6"
+                                                   id="0_answer_6_option_2"/>
+                                            <label data-v="2" for="0_answer_6_option_2">
+                                                <p class="ue" style="display: inline;">B</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer6"
+                                                   id="0_answer_6_option_3"/>
+                                            <label data-v="3" for="0_answer_6_option_3">
+                                                <p class="ue" style="display: inline;">C</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer6"
+                                                   id="0_answer_6_option_4"/>
+                                            <label data-v="4" for="0_answer_6_option_4">
+                                                <p class="ue" style="display: inline;">D</p>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li data-num="6" id="qu_0_6">
+                                <div class="test_content_nr_tt">
+                                    <i>7</i><font>我因为头疼、颈痛和背痛而苦恼 （ ）</font><b class="icon iconfont">&#xe881;</b>
+                                </div>
+                                <div class="test_content_nr_main">
+                                    <ul>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer7"
+                                                   id="0_answer_7_option_1"/>
+                                            <label data-v="1" for="0_answer_7_option_1">
+                                                <p class="ue" style="display: inline;">A</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer7"
+                                                   id="0_answer_7_option_2"/>
+                                            <label data-v="2" for="0_answer_7_option_2">
+                                                <p class="ue" style="display: inline;">B</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer7"
+                                                   id="0_answer_7_option_3"/>
+                                            <label data-v="3" for="0_answer_7_option_3">
+                                                <p class="ue" style="display: inline;">C</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer7"
+                                                   id="0_answer_7_option_4"/>
+                                            <label data-v="4" for="0_answer_7_option_4">
+                                                <p class="ue" style="display: inline;">D</p>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li data-num="7" id="qu_0_7">
+                                <div class="test_content_nr_tt">
+                                    <i>8</i><font>我觉得容易衰弱和疲乏 （ ）</font><b class="icon iconfont">&#xe881;</b>
+                                </div>
+                                <div class="test_content_nr_main">
+                                    <ul>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer8"
+                                                   id="0_answer_8_option_1"/>
+                                            <label data-v="1" for="0_answer_8_option_1">
+                                                <p class="ue" style="display: inline;">A</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer8"
+                                                   id="0_answer_8_option_2"/>
+                                            <label data-v="2" for="0_answer_8_option_2">
+                                                <p class="ue" style="display: inline;">B</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer8"
+                                                   id="0_answer_8_option_3"/>
+                                            <label data-v="3" for="0_answer_8_option_3">
+                                                <p class="ue" style="display: inline;">C</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer8"
+                                                   id="0_answer_8_option_4"/>
+                                            <label data-v="4" for="0_answer_8_option_4">
+                                                <p class="ue" style="display: inline;">D</p>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li data-num="8" id="qu_0_8">
+                                <div class="test_content_nr_tt">
+                                    <i>*9</i><font>我觉得心平气和，并且容易安静坐着 （ ）</font><b class="icon iconfont">&#xe881;</b>
+                                </div>
+                                <div class="test_content_nr_main">
+                                    <ul>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer9"
+                                                   id="0_answer_9_option_1"/>
+                                            <label data-v="4" for="0_answer_9_option_1">
+                                                <p class="ue" style="display: inline;">A</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer9"
+                                                   id="0_answer_9_option_2"/>
+                                            <label data-v="3" for="0_answer_9_option_2">
+                                                <p class="ue" style="display: inline;">B</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer9"
+                                                   id="0_answer_9_option_3"/>
+                                            <label data-v="2" for="0_answer_9_option_3">
+                                                <p class="ue" style="display: inline;">C</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer9"
+                                                   id="0_answer_9_option_4"/>
+                                            <label data-v="1" for="0_answer_9_option_4">
+                                                <p class="ue" style="display: inline;">D</p>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li data-num="9" id="qu_0_9">
+                                <div class="test_content_nr_tt">
+                                    <i>10</i><font>我觉得心跳得很快 （ ）</font><b class="icon iconfont">&#xe881;</b>
+                                </div>
+                                <div class="test_content_nr_main">
+                                    <ul>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer10"
+                                                   id="0_answer_10_option_1"/>
+                                            <label data-v="1" for="0_answer_10_option_1">
+                                                <p class="ue" style="display: inline;">A</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer10"
+                                                   id="0_answer_10_option_2"/>
+                                            <label data-v="2" for="0_answer_10_option_2">
+                                                <p class="ue" style="display: inline;">B</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer10"
+                                                   id="0_answer_10_option_3"/>
+                                            <label data-v="3" for="0_answer_10_option_3">
+                                                <p class="ue" style="display: inline;">C</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer10"
+                                                   id="0_answer_10_option_4"/>
+                                            <label data-v="4" for="0_answer_10_option_4">
+                                                <p class="ue" style="display: inline;">D</p>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li data-num="10" id="qu_0_10">
+                                <div class="test_content_nr_tt">
+                                    <i>11</i><font>我因为一阵阵头晕而苦恼（ ）</font><b class="icon iconfont">&#xe881;</b>
+                                </div>
+                                <div class="test_content_nr_main">
+                                    <ul>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer11"
+                                                   id="0_answer_11_option_1"/>
+                                            <label data-v="1" for="0_answer_11_option_1">
+                                                <p class="ue" style="display: inline;">A</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer11"
+                                                   id="0_answer_11_option_2"/>
+                                            <label data-v="2" for="0_answer_11_option_2">
+                                                <p class="ue" style="display: inline;">B</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer11"
+                                                   id="0_answer_11_option_3"/>
+                                            <label data-v="3" for="0_answer_11_option_3">
+                                                <p class="ue" style="display: inline;">C</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer11"
+                                                   id="0_answer_11_option_4"/>
+                                            <label data-v="4" for="0_answer_11_option_4">
+                                                <p class="ue" style="display: inline;">D</p>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li data-num="11" id="qu_0_11">
+                                <div class="test_content_nr_tt">
+                                    <i>12</i><font>我有晕倒发作，或觉得要晕倒似的 （ ）</font><b class="icon iconfont">&#xe881;</b>
+                                </div>
+                                <div class="test_content_nr_main">
+                                    <ul>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer12"
+                                                   id="0_answer_12_option_1"/>
+                                            <label data-v="1" for="0_answer_12_option_1">
+                                                <p class="ue" style="display: inline;">A</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer12"
+                                                   id="0_answer_12_option_2"/>
+                                            <label data-v="2" for="0_answer_12_option_2">
+                                                <p class="ue" style="display: inline;">B</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer12"
+                                                   id="0_answer_12_option_3"/>
+                                            <label data-v="3" for="0_answer_12_option_3">
+                                                <p class="ue" style="display: inline;">C</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer12"
+                                                   id="0_answer_12_option_4"/>
+                                            <label data-v="4" for="0_answer_12_option_4">
+                                                <p class="ue" style="display: inline;">D</p>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li data-num="12" id="qu_0_12">
+                                <div class="test_content_nr_tt">
+                                    <i>*13</i><font>我觉得比平时容易紧张或着急 （ ）</font><b class="icon iconfont">&#xe881;</b>
+                                </div>
+                                <div class="test_content_nr_main">
+                                    <ul>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer13"
+                                                   id="0_answer_13_option_1"/>
+                                            <label data-v="4" for="0_answer_13_option_1">
+                                                <p class="ue" style="display: inline;">A</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer13"
+                                                   id="0_answer_13_option_2"/>
+                                            <label data-v="3" for="0_answer_13_option_2">
+                                                <p class="ue" style="display: inline;">B</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer13"
+                                                   id="0_answer_13_option_3"/>
+                                            <label data-v="2" for="0_answer_13_option_3">
+                                                <p class="ue" style="display: inline;">C</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer13"
+                                                   id="0_answer_13_option_4"/>
+                                            <label data-v="1" for="0_answer_13_option_4">
+                                                <p class="ue" style="display: inline;">D</p>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li data-num="13" id="qu_0_13">
+                                <div class="test_content_nr_tt">
+                                    <i>14</i><font>我的手脚麻木和刺痛 （ ）</font><b class="icon iconfont">&#xe881;</b>
+                                </div>
+                                <div class="test_content_nr_main">
+                                    <ul>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer14"
+                                                   id="0_answer_14_option_1"/>
+                                            <label data-v="1" for="0_answer_14_option_1">
+                                                <p class="ue" style="display: inline;">A</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer14"
+                                                   id="0_answer_14_option_2"/>
+                                            <label data-v="2" for="0_answer_14_option_2">
+                                                <p class="ue" style="display: inline;">B</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer14"
+                                                   id="0_answer_14_option_3"/>
+                                            <label data-v="3" for="0_answer_14_option_3">
+                                                <p class="ue" style="display: inline;">C</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer14"
+                                                   id="0_answer_14_option_4"/>
+                                            <label data-v="4" for="0_answer_14_option_4">
+                                                <p class="ue" style="display: inline;">D</p>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li data-num="14" id="qu_0_14">
+                                <div class="test_content_nr_tt">
+                                    <i>15</i><font>我因为胃痛和消化不良而苦恼 （ ）</font><b class="icon iconfont">&#xe881;</b>
+                                </div>
+                                <div class="test_content_nr_main">
+                                    <ul>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer15"
+                                                   id="0_answer_15_option_1"/>
+                                            <label data-v="1" for="0_answer_15_option_1">
+                                                <p class="ue" style="display: inline;">A</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer15"
+                                                   id="0_answer_15_option_2"/>
+                                            <label data-v="2" for="0_answer_15_option_2">
+                                                <p class="ue" style="display: inline;">B</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer15"
+                                                   id="0_answer_15_option_3"/>
+                                            <label data-v="3" for="0_answer_15_option_3">
+                                                <p class="ue" style="display: inline;">C</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer15"
+                                                   id="0_answer_15_option_4"/>
+                                            <label data-v="4" for="0_answer_15_option_4">
+                                                <p class="ue" style="display: inline;">D</p>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li data-num="15" id="qu_0_15">
+                                <div class="test_content_nr_tt">
+                                    <i>16</i><font>我常常要小便 （ ）</font><b class="icon iconfont">&#xe881;</b>
+                                </div>
+                                <div class="test_content_nr_main">
+                                    <ul>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer16"
+                                                   id="0_answer_16_option_1"/>
+                                            <label data-v="1" for="0_answer_16_option_1">
+                                                <p class="ue" style="display: inline;">A</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer16"
+                                                   id="0_answer_16_option_2"/>
+                                            <label data-v="2" for="0_answer_16_option_2">
+                                                <p class="ue" style="display: inline;">B</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer16"
+                                                   id="0_answer_16_option_3"/>
+                                            <label data-v="3" for="0_answer_16_option_3">
+                                                <p class="ue" style="display: inline;">C</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer16"
+                                                   id="0_answer_16_option_4"/>
+                                            <label data-v="4" for="0_answer_16_option_4">
+                                                <p class="ue" style="display: inline;">D</p>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li data-num="16" id="qu_0_16">
+                                <div class="test_content_nr_tt">
+                                    <i>*17</i><font>我的手脚常常是干燥温暖的 （ ）</font><b class="icon iconfont">&#xe881;</b>
+                                </div>
+                                <div class="test_content_nr_main">
+                                    <ul>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer17"
+                                                   id="0_answer_17_option_1"/>
+                                            <label data-v="4" for="0_answer_17_option_1">
+                                                <p class="ue" style="display: inline;">A</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer17"
+                                                   id="0_answer_17_option_2"/>
+                                            <label data-v="3" for="0_answer_17_option_2">
+                                                <p class="ue" style="display: inline;">B</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer17"
+                                                   id="0_answer_17_option_3"/>
+                                            <label data-v="2" for="0_answer_17_option_3">
+                                                <p class="ue" style="display: inline;">C</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer17"
+                                                   id="0_answer_17_option_4"/>
+                                            <label data-v="1" for="0_answer_17_option_4">
+                                                <p class="ue" style="display: inline;">D</p>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li data-num="17" id="qu_0_17">
+                                <div class="test_content_nr_tt">
+                                    <i>18</i><font>我脸红发热 （ ）</font><b class="icon iconfont">&#xe881;</b>
+                                </div>
+                                <div class="test_content_nr_main">
+                                    <ul>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer18"
+                                                   id="0_answer_18_option_1"/>
+                                            <label data-v="1" for="0_answer_18_option_1">
+                                                <p class="ue" style="display: inline;">A</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer18"
+                                                   id="0_answer_18_option_2"/>
+                                            <label data-v="2" for="0_answer_18_option_2">
+                                                <p class="ue" style="display: inline;">B</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer18"
+                                                   id="0_answer_18_option_3"/>
+                                            <label data-v="3" for="0_answer_18_option_3">
+                                                <p class="ue" style="display: inline;">C</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer18"
+                                                   id="0_answer_18_option_4"/>
+                                            <label data-v="4" for="0_answer_18_option_4">
+                                                <p class="ue" style="display: inline;">D</p>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li data-num="18" id="qu_0_18">
+                                <div class="test_content_nr_tt">
+                                    <i>*19</i><font>我容易入睡并且一夜睡得很好 （ ）</font><b class="icon iconfont">&#xe881;</b>
+                                </div>
+                                <div class="test_content_nr_main">
+                                    <ul>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer19"
+                                                   id="0_answer_19_option_1"/>
+                                            <label data-v="4" for="0_answer_19_option_1">
+                                                <p class="ue" style="display: inline;">A</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer19"
+                                                   id="0_answer_19_option_2"/>
+                                            <label data-v="3" for="0_answer_19_option_2">
+                                                <p class="ue" style="display: inline;">B</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer19"
+                                                   id="0_answer_19_option_3"/>
+                                            <label data-v="2" for="0_answer_19_option_3">
+                                                <p class="ue" style="display: inline;">C</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer19"
+                                                   id="0_answer_19_option_4"/>
+                                            <label data-v="1" for="0_answer_19_option_4">
+                                                <p class="ue" style="display: inline;">D</p>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li data-num="19" id="qu_0_19">
+                                <div class="test_content_nr_tt">
+                                    <i>20</i><font>我作恶梦 （ ）</font><b class="icon iconfont">&#xe881;</b>
+                                </div>
+                                <div class="test_content_nr_main">
+                                    <ul>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer20"
+                                                   id="0_answer_20_option_1"/>
+                                            <label data-v="1" for="0_answer_20_option_1">
+                                                <p class="ue" style="display: inline;">A</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer20"
+                                                   id="0_answer_20_option_2"/>
+                                            <label data-v="2" for="0_answer_20_option_2">
+                                                <p class="ue" style="display: inline;">B</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer20"
+                                                   id="0_answer_20_option_3"/>
+                                            <label data-v="3" for="0_answer_20_option_3">
+                                                <p class="ue" style="display: inline;">C</p>
+                                            </label>
+                                        </li>
+                                        <li class="option">
+                                            <input type="radio" class="radioOrCheck" name="answer20"
+                                                   id="0_answer_20_option_4"/>
+                                            <label data-v="4" for="0_answer_20_option_4">
+                                                <p class="ue" style="display: inline;">D</p>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--nr end-->
+    <div class="foot"></div>
+</div>
+
+<script src="jquery-1.11.3.min.js"></script>
+<script src="jquery.easy-pie-chart.js"></script>
+<!--时间js-->
+<script src="time/jquery.countdown.js"></script>
+<script>
+    window.jQuery(function ($) {
+        "use strict";
+
+        $('time').countDown({
+            with_separators: false
+        });
+        $('.alt-1').countDown({
+            css_class: 'countdown-alt-1'
+        });
+        $('.alt-2').countDown({
+            css_class: 'countdown-alt-2'
+        });
+
+    });
+
+
+    $(function () {
+        var options = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+        $('#sub').click(function () {
+            var sum = 0;
+            var name=$("#n-name").val();
+            if (!name) {
+                alert("请输入姓名！");
+                return;
+            }
+            var sex=$("#n-sex").val();
+            if (!sex) {
+                alert("请输入性别！");
+                return;
+            }
+            for (let option of options) {
+                sum += option;
+            }
+            alert(name + "(" + sex + ")，" + "最后得分：" + sum*1.25 + "分");
+        });
+
+        $('li.option label').click(function () {
+            var n = $(this).parent().parent().parent().parent().data("num");
+            options[n] = $(this).data("v");
+            console.log(options);
+            var examId = $(this).closest('.test_content_nr_main').closest('li').attr('id'); // 得到题目ID
+            var cardLi = $('a[href=#' + examId + ']'); // 根据题目ID找到对应答题卡
+            // 设置已答题
+            if (!cardLi.hasClass('hasBeenAnswer')) {
+                cardLi.addClass('hasBeenAnswer');
+            }
+        });
+    });
+</script>
+
+</body>
+
+</html>
