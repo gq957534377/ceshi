@@ -844,12 +844,12 @@
         var options = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
         $('#sub').click(function () {
             var sum = 0;
-            var name=$("#n-name").val();
+            var name = $("#n-name").val();
             if (!name) {
                 alert("请输入姓名！");
                 return;
             }
-            var sex=$("#n-sex").val();
+            var sex = $("#n-sex").val();
             if (!sex) {
                 alert("请输入性别！");
                 return;
@@ -857,7 +857,7 @@
             for (let option of options) {
                 sum += option;
             }
-            alert(name + "(" + sex + ")，" + "最后得分：" + sum*1.25 + "分");
+            alert(name + "(" + sex + ")，" + "最后得分：" + sum * 1.25 + "分");
         });
 
         $('li.option label').click(function () {
